@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Đoán số bố mày nghĩ</title>
+<style>
+    body {
+        font-family: Arial;
+        background: #111;
+        color: #fff;
+        padding: 40px;
+        text-align: center;
+    }
+    input {
+        padding: 10px;
+        font-size: 18px;
+        width: 200px;
+        text-align: center;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 18px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+
+<h1>Đoán số bố mày nghĩ (-4 - 962)</h1>
+
+<input id="guess" type="number" placeholder="Nhập số">
+<button onclick="check()">Đoán</button>
+
+<p id="msg"></p>
+
+<script>
+function check() {
+    const target = 36;
+    let n = Number(document.getElementById("guess").value);
+    let msg = document.getElementById("msg");
+
+    if (n === target) {
+        msg.innerHTML = "Chúc mừng Thanh Hóa rau má say bye fifai mãi mãi";
+    } else {
+        msg.innerHTML = "Sai rồi địt mẹ mày, đoán lại đi con trai";
+    }
+}
+</script>
+
+</body>
+</html>
